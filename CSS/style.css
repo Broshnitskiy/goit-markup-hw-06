@@ -229,7 +229,6 @@ img{
 .hero-button:hover,
 .hero-button:focus {
     background-color:var(--button-hower-color);
-
 }
 
 
@@ -482,8 +481,6 @@ img{
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
 
-    
-
 }
 
 .port-link{
@@ -617,6 +614,9 @@ img{
 margin-right: 70px;
 }
 
+.footer-soc-icon{
+    margin-right: 93px;
+}
 
 .footer-par{
     margin-bottom: 20px;
@@ -637,10 +637,77 @@ margin-right: 70px;
     background-color: var(--style-color);
 }
 
+/* Стилі ФОРМИ футера */
+
+.footer-form-label{
+  
+    display: block;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--page-color);
+
+    margin-bottom: 20px;
+}
+
+.footer-form-mail{
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    outline: none;
+    color: var(--page-color);
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-form-mail::placeholder{
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+.footer-form-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 28px;
+       
+    border:none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--page-color);
+    background-color: var(--style-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--button-hower-color);
+}
+
+.footer-form-icon{
+    margin-left: 10px;
+}
+
+
 
 /* Стилі мадалки */
-
-
 
 .backdrop{
     position: fixed;
@@ -682,7 +749,13 @@ margin-right: 70px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
-    cursor: pointer;    
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+    fill: var(--style-color);
 }
 
 .is-hidden {
