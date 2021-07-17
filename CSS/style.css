@@ -838,6 +838,10 @@ margin-right: 70px;
     border: none;
 }
 
+.modal-form-checkbox:focus + .agree-label::before{
+    outline: 2px solid var(--style-color);
+}
+
 .modal-form-checkbox-link{
     color: var(--style-color);
 }
