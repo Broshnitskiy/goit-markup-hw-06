@@ -478,9 +478,11 @@
                     Комментарий
                     <textarea name="user_comments" class="modal-area" placeholder="Введите текст"></textarea>
                 </label>
-                <input class="modal-form-checkbox" type="checkbox" name="user_check" id="agrees_to_the_terms" required>
-                <label class="agree-label" for="agrees_to_the_terms">Соглашаюсь с рассылкой и принимаю&nbsp<a
-                        href="#">Условия договора</a></label>
+
+                <input class="modal-form-checkbox visually-hidden" type="checkbox" name="user_check"
+                    id="agrees_to_the_terms" required>
+                <label class="agree-label" for="agrees_to_the_terms">Соглашаюсь с рассылкой и
+                    принимаю&nbsp<a href="#" class="modal-form-checkbox-link">Условия договора</a></label>
 
                 <button type="submit" class="modal-form-btn common-btn">Отправить</button>
             </form>
@@ -492,7 +494,7 @@
 
         </div>
     </div>
-    <!-- <script src="./JS/modal.js"></script> -->
+    <script src="./JS/modal.js"></script>
 </body>
 
 </html>
