@@ -609,9 +609,6 @@ img{
 margin-right: 70px;
 }
 
-.footer-soc-icon{
-    margin-right: 93px;
-}
 
 .footer-par{
     margin-bottom: 20px;
@@ -633,6 +630,10 @@ margin-right: 70px;
 }
 
 /* Стилі ФОРМИ футера */
+
+.footer-form{
+    margin-left: auto;
+}
 
 .footer-form-title{
   
@@ -839,7 +840,7 @@ margin-right: 70px;
 }
 
 .modal-form-checkbox:focus + .agree-label::before{
-    outline: 2px solid var(--style-color);
+    box-shadow: 0 0 0 2px var(--style-color);
 }
 
 .modal-form-checkbox-link{
